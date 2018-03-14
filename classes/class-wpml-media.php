@@ -99,7 +99,7 @@ class WPML_Media
 				add_action( 'admin_menu', array( $this, 'menu' ) );
 				add_filter( 'manage_media_columns', array( $this, 'manage_media_columns' ), 10, 1 );
 				add_action( 'manage_media_custom_column', array( $this, 'manage_media_custom_column' ), 10, 2 );
-				add_action( 'parse_query', array( $this, 'parse_query' ) );
+				// add_action( 'parse_query', array( $this, 'parse_query' ) ); //Comment this for speed up image load
 				add_filter( 'views_upload', array( $this, 'views_upload' ) );
 				add_action( 'icl_post_languages_options_after', array( $this, 'language_options' ) );
 
